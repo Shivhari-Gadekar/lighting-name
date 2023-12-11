@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yogesh Gadekar</title>
+    <style>
+        * {
+            font-family: 'Chivo', sans-serif;
+            background-color: #111111;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        .sitelogotext {
+            fill: none;
+            stroke-linejoin: round;
+            stroke-dasharray: 70px;
+            animation: stroke 8s linear infinite;
+            font-size: 2em;
+            text-transform: uppercase;
+        }
+
+        .sitelogotext:nth-child(5n+2) {
+            stroke: cyan;
+            animation-delay: -2.4s;
+        }
+
+        .sitelogotext:nth-child(5n+3) {
+            stroke: #ff0;
+            animation-delay: -3.6s;
+        }
+
+        .sitelogotext:nth-child(5n+4) {
+            stroke: #cbfc01;
+            animation-delay: -4.8s;
+        }
+
+        .sitelogotext:nth-child(5n+1) {
+            stroke: #009de1;
+            animation-delay: -1.2s;
+        }
+
+        @keyframes stroke {
+            100% {
+                stroke-dashoffset: -400;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <a href="https://coding-yogesh.github.io/Yogesh-Gadekar-Portfolio.github.io/">
+        <svg viewBox="0 0 330 50">
+            <symbol id="s-text">
+                <text text-anchor="middle" x="50%" y="50%" dy=".35em">
+                    Yogesh Gadekar
+                </text>
+            </symbol>
+            <use xlink:href="#s-text" class="sitelogotext"></use>
+            <use xlink:href="#s-text" class="sitelogotext"></use>
+            <use xlink:href="#s-text" class="sitelogotext"></use>
+            <use xlink:href="#s-text" class="sitelogotext"></use>
+            <use xlink:href="#s-text" class="sitelogotext"></use>
+        </svg>
+    </a>
+
+</body>
+
+</html>
